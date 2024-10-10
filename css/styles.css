@@ -21,81 +21,97 @@ ul {
 body {
   margin: 0;
   font-family: "poppins", sans-serif;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
-.container{
-  background-color: #FAFAFA;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  }
-
- @media screen and (width>768px){
-  .container{
-    
-  }
- } 
-
-.pretitle{
+.header {
+  text-align: center;
+}
+.pretitle {
   font-size: 24;
   font-weight: 200;
-  color: #4D4F62;
+  color: #4d4f62;
 }
 
-.title{
+.title {
   font-size: 24;
   font-weight: 600;
-  color: #4D4F62;
+  color: #4d4f62;
 }
-.description1{
+.description1 {
   font-size: 15;
-  font-weight:400;
-  color:#4D4F6250;
+  font-weight: 400;
+  color: #4d4f6250;
   line-height: 25px;
 }
-.card{
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 32px;
+}
+
+@media screen and (width>768px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.card {
   position: relative;
   width: 311px;
   height: 222px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 8px;
   margin-bottom: 25px;
-}
-  @media screen and (width>768px){
-    .card{
-      width: 350px;
-      height: 250px;
-    }
-  }
-
-.image{
-position: absolute;
-bottom: 28px;
-right: 28px;
-}
-.card-blue{
-  border-top: solid #44D3D2 3.55px;
+  padding: 28px;
+  box-shadow: 0 15px 30px -11px rgb(131 166 210/ 0.22);
 }
 
-.card-red{
-  border-top: solid #EA5454 3.55px;
+.subtitle {
+  margin: 0;
 }
-.card-orange{
-  border-top: solid #FCAE4A 3.55px;
+.image {
+  position: absolute;
+  bottom: 28px;
+  right: 28px;
 }
-  .card-darkblue{
-    border-top: solid #549EF2 3.55px;
+.card-blue {
+  border-top: solid #44d3d2 3.55px;
+}
+@media screen and (width>768px) {
+  .card-blue {
+    margin-right: 30px;
   }
-.subtitle{
+}
+.card-red {
+  border-top: solid #ea5454 3.55px;
+}
+@media screen and (width>768px) {
+  .card-red {
+    margin-bottom: 30px;
+  }
+}
+.card-orange {
+  border-top: solid #fcae4a 3.55px;
+}
+
+.card-darkblue {
+  border-top: solid #549ef2 3.55px;
+}
+@media screen and (width>768px) {
+  .card-darkblue {
+    margin-left: 30px;
+  }
+}
+.subtitle {
   font-size: 20;
   font-weight: 600;
-  color: #4D4F62;
+  color: #4d4f62;
 }
-.description2{
+.description2 {
   font-size: 13;
-  font-weight:  400px; ;
+  font-weight: 400px;
 
-  color: #4D4F6250;
+  color: #4d4f6250;
   line-height: 23px;
 }
